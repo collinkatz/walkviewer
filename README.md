@@ -1,10 +1,17 @@
 # Contents
 1. <a href="#Description">Description</a>
-2. <a href="#Requirements">Requirements</a>
-3. <a href="#Running and Shutdown">Running and Shutdown</a>
+2. <a href="#Libraries & Frameworks">Libraries & Frameworks</a>
+3. <a href="#Requirements">Requirements</a>
+4. <a href="#Running and Shutdown">Running and Shutdown</a>
 
 # Description
 This project seeks to provide a robust and lightweight viewer for transit routes, sidewalks, and other non-auto-centric infrastructure. This would allow users to plan their transit routes and explore transit options in a way that highlights stops and pedestrian friendly options. This project builds off of experience I gained with a previous project, <a href="https://github.com/collinkatz/sidewalkhelper/">sidewalkhelper</a>.
+
+# Libraries & Frameworks
+This project uses:
+- Django
+- React
+- Postgresql
 
 # Requirements
 Since this application is containerized via Docker, the only requirement is that you have Docker installed on your machine. All requirements downloading and setup is handled when the application is run.
