@@ -5,10 +5,17 @@ services:
     image: postgres
     # volumes:
     #   - ./data/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432" # Default postgres port
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    healthcheck: # Set service healthy when database ready
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 1s
+      timeout: 1s
+      retries: 20
   backend:
     build: ./geodjango
     # volumes:
@@ -19,8 +26,11 @@ services:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-    depends_on:
+    links:
       - db
+    depends_on:
+      db:
+        condition: service_healthy # Only start backend once database is up
   frontend:
     build: ./geoviewer
     ports:
