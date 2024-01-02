@@ -1,6 +1,6 @@
 # Contents
-1. <a href="#Description"></a>
-2. <a href="#Requirements"></a>
+1. <a href="#Description">Description</a>
+2. <a href="#Requirements">Requirements</a>
 
 # Description
 This project seeks to provide a robust and lightweight viewer for transit routes, sidewalks, and other non-auto-centric infrastructure. This would allow users to plan their transit routes and explore transit options in a way that highlights stops and pedestrian friendly options. This project builds off of experience I gained with a previous project, <a href="https://github.com/collinkatz/sidewalkhelper/">sidewalkhelper</a>.
