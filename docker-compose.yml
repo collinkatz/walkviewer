@@ -11,7 +11,7 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-    healthcheck: # Set service healthy when database ready
+    healthcheck: # Test for service health when database ready
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 1s
       timeout: 1s
