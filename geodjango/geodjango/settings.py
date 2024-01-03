@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-%fu+vw^nsmla0^6w(3#5bm!^bx!-pd)wv77!3z7*5emk#oblbi"
+MAPS_API_KEY_LOCATION = BASE_DIR / "maps_api_key.txt"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -40,6 +41,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # "django.contrib.gis",
     "world",
+    "util",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
