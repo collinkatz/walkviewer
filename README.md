@@ -33,7 +33,7 @@ This application uses the maps javascript api to load google maps on the webpage
 1. Create a file named `maps_api_key.txt` in the django base directory.
 2. Paste your api key into this file and save the file.
 3. If you want to specify a different location for your api key, go into settings.py in the django base directory
-4. Set the variable `MAPS_API_KEY_LOCATION = <your api key goes here>`
+4. Set the variable `MAPS_API_KEY_LOCATION = <your api key location>`
 
 # Running and Shutdown
 This application can be run by executing `docker compose up` in the command line.
